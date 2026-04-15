@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Read what our customers say about Vintage Bag Store." />
+  <title>Testimonials | Vintage Bag Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Vintage Bag Store logo" class="logo-img" />Vintage<span>Bag</span> Store</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="how-to-order.html">How to Order</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero-inner">
+    <div class="hero-overlay"></div>
+
+    <!-- LEFT -->
+    <div class="page-hero-content">
+      <span class="hero-eyebrow">✦ Customer Reviews</span>
+      <h1>What Our Customers<br><em>Say</em></h1>
+      <p>Real stories from real vintage lovers around the world — verified buyers sharing their experience.</p>
+      <div class="hero-buttons">
+        <a href="gallery.html" class="btn btn-gold">Browse Collection</a>
+        <a href="contact.html" class="btn btn-ghost">Share Your Story</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Verified Buyers</span>
+        </div>
+        <div class="trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <span>120+ Reviews</span>
+        </div>
+        <div class="trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span>4.9 Average Rating</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT — Testimonials -->
+    <div class="page-hero-visual" aria-hidden="true">
+      <div class="hero-card hero-card-1">
+        <div class="hcard-img">⭐</div>
+        <div class="hcard-info">
+          <span class="hcard-tag">Rating</span>
+          <span class="hcard-name">★★★★★</span>
+          <span class="hcard-price">Average score</span>
+        </div>
+      </div>
+      <div class="hero-card hero-card-2">
+        <div class="hcard-img">💬</div>
+        <div class="hcard-info">
+          <span class="hcard-tag">Reviews</span>
+          <span class="hcard-name">120+ Reviews</span>
+          <span class="hcard-price">Verified buyers</span>
+        </div>
+      </div>
+      <div class="hero-card hero-card-3">
+        <div class="hcard-img">❤️</div>
+        <div class="hcard-info">
+          <span class="hcard-tag">Satisfaction</span>
+          <span class="hcard-name">500+ Happy</span>
+          <span class="hcard-price">Customers</span>
+        </div>
+      </div>
+      <!-- Scattered gold stars for testimonials feel -->
+      <div class="phv-star phv-star-1" aria-hidden="true">★</div>
+      <div class="phv-star phv-star-2" aria-hidden="true">★</div>
+      <div class="phv-star phv-star-3" aria-hidden="true">★</div>
+      <div class="hero-ring hero-ring-1"></div>
+      <div class="hero-ring hero-ring-2"></div>
+      <div class="hero-rating">
+        <span class="hero-rating-stars">★★★★★</span>
+        <span class="hero-rating-text">4.9 · 120+ reviews</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials-page">
+    <div class="container">
+
+      <!-- Live summary from sheet -->
+      <div class="testi-summary reveal">
+        <div class="testi-avg">
+          <span id="avg-stars" class="testi-avg-num">—</span>
+          <span class="testi-avg-stars">★★★★★</span>
+          <span id="review-count" class="testi-avg-label">Loading reviews…</span>
+        </div>
+      </div>
+
+      <div class="testimonials-grid" id="testimonials-grid" aria-live="polite">
+        <!-- Skeletons -->
+        <div class="testimonial-card skeleton-card"><div class="skeleton-line" style="width:32%;height:13px;margin-bottom:.8rem"></div><div class="skeleton-line" style="width:100%;height:11px;margin-bottom:.35rem"></div><div class="skeleton-line" style="width:88%;height:11px;margin-bottom:.35rem"></div><div class="skeleton-line" style="width:52%;height:11px"></div></div>
+        <div class="testimonial-card skeleton-card"><div class="skeleton-line" style="width:32%;height:13px;margin-bottom:.8rem"></div><div class="skeleton-line" style="width:100%;height:11px;margin-bottom:.35rem"></div><div class="skeleton-line" style="width:88%;height:11px;margin-bottom:.35rem"></div><div class="skeleton-line" style="width:52%;height:11px"></div></div>
+        <div class="testimonial-card skeleton-card"><div class="skeleton-line" style="width:32%;height:13px;margin-bottom:.8rem"></div><div class="skeleton-line" style="width:100%;height:11px;margin-bottom:.35rem"></div><div class="skeleton-line" style="width:88%;height:11px;margin-bottom:.35rem"></div><div class="skeleton-line" style="width:52%;height:11px"></div></div>
+      </div>
+
+      <div class="text-center reveal" style="margin-top:3rem;">
+        <p style="color:var(--text-mid);margin-bottom:1rem;font-size:.95rem;">Had a great experience? We'd love to hear from you.</p>
+        <a href="contact.html" class="btn btn-primary">Share Your Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta-banner">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <span class="eyebrow-tag">Ready?</span>
+        <h2>Ready to Find Your Perfect Bag?</h2>
+        <p>Browse our ever-changing collection or reach out directly.</p>
+        <div class="cta-buttons">
+          <a href="gallery.html" class="btn btn-gold">Browse Gallery</a>
+          <a href="contact.html" class="btn btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo footer-logo"><img src="images/logo.png" alt="Vintage Bag Store logo" class="logo-img logo-img-footer" />Vintage<span>Bag</span> Store</a>
+          <p>Handpicked vintage bags with timeless charm. Each piece tells a story — find yours today.</p>
+          <div class="footer-socials">
+            <a href="https://t.me/vin637" target="_blank" rel="noopener" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.17 13.667l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.978.892z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@vintage1639" target="_blank" rel="noopener" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/vint_age.23" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="how-to-order.html">How to Order</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+2519470330634">📞 +251 (947) 033-0634</a></li>
+            <li><a href="https://t.me/vintagebagstore" target="_blank" rel="noopener">✈ @vintagebagstore</a></li>
+            <li><a href="mailto:vintagebagstore23@gmail.com">✉ vintagebagstore23@gmail.com</a></li>
+          </ul>
+          <div style="margin-top:1.2rem;">
+            <a href="https://t.me/vintagebagstore" target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.8rem;padding:.5rem 1.2rem;">Chat on Telegram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 Vintage Bag Store. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
